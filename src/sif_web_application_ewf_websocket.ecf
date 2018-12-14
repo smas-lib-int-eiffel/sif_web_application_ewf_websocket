@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-16-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-16-0 http://www.eiffel.com/developers/xml/configuration-1-16-0.xsd" name="sif_web_application_websocket" uuid="395E3167-3EC2-4A41-A627-256310E8276F" library_target="sif_web_application_websocket">
+	<target name="sif_web_application_websocket">
+		<root all_classes="true"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+		</file_rule>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<capability>
+			<catcall_detection support="none"/>
+			<concurrency support="none"/>
+			<void_safety support="all"/>
+		</capability>
+		<library name="base" location="$ISE_LIBRARY/library/base/base-safe.ecf"/>
+		<library name="communication_sif" location="$ISE_LIBRARY\contrib\library/communication/sif/src/communication_sif.ecf" readonly="false"/>
+		<library name="communication_web_socket" location="$ISE_LIBRARY\contrib\library/communication/websocket/src/communication_websocket.ecf" readonly="false"/>
+		<library name="http" location="$ISE_LIBRARY\contrib\library\network\protocol\http\http.ecf"/>
+		<library name="shared_logging" location="$ISE_LIBRARY/contrib/library/runtime/logging/shared/src/shared_logging.ecf" readonly="false"/>
+		<library name="sif_core" location="$ISE_LIBRARY/contrib/library/sif/core/src/sif_core.ecf" readonly="false"/>
+		<library name="sif_user_viewable" location="$ISE_LIBRARY/contrib/library/sif/user_viewable/src/sif_user_viewable.ecf" readonly="false"/>
+		<library name="sif_web_application" location="$ISE_LIBRARY/contrib/library/sif/web_application/src/sif_web_application.ecf" readonly="false"/>
+		<library name="wsf_standalone_websocket" location="$ISE_LIBRARY/contrib/library/web/framework/ewf/wsf/connector/standalone_websocket.ecf"/>
+		<library name="wsf" location="$ISE_LIBRARY\contrib\library\web\framework\ewf\wsf\wsf.ecf"/>
+		<cluster name="sif_web_application_websocket" location="." recursive="true" readonly="true"/>
+	</target>
+</system>
