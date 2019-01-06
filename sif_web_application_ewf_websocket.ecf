@@ -17,15 +17,15 @@
 			<void_safety support="all"/>
 		</capability>
 		<library name="base" location="$ISE_LIBRARY/library/base/base-safe.ecf"/>
-		<library name="communication_sif" location="$ISE_LIBRARY\external\library/communication/sif/src/communication_sif.ecf" readonly="false"/>
-		<library name="communication_web_socket" location="$ISE_LIBRARY\external\library/communication/websocket/src/communication_websocket.ecf" readonly="false"/>
+		<library name="communication_sif" location="$ISE_LIBRARY\external\library/communication/sif/communication_sif.ecf" readonly="false"/>
+		<library name="communication_web_socket" location="$ISE_LIBRARY\external\library/communication/websocket/communication_websocket.ecf" readonly="false"/>
 		<library name="http" location="$ISE_LIBRARY\contrib\library\network\protocol\http\http.ecf"/>
-		<library name="shared_logging" location="$ISE_LIBRARY/external/library/runtime/logging/shared/src/shared_logging.ecf" readonly="false"/>
-		<library name="sif_core" location="$ISE_LIBRARY/external/library/sif/core/src/sif_core.ecf" readonly="false"/>
-		<library name="sif_user_viewable" location="$ISE_LIBRARY/external/library/sif/user_viewable/src/sif_user_viewable.ecf" readonly="false"/>
-		<library name="sif_web_application" location="$ISE_LIBRARY/external/library/sif/web_application/src/sif_web_application.ecf" readonly="false"/>
+		<library name="shared_logging" location="$ISE_LIBRARY/external/library/runtime/logging/shared/shared_logging.ecf" readonly="false"/>
+		<library name="sif_core" location="$ISE_LIBRARY/external/library/sif/core/sif_core.ecf" readonly="false"/>
+		<library name="sif_user_viewable" location="$ISE_LIBRARY/external/library/sif/user_viewable/sif_user_viewable.ecf" readonly="false"/>
+		<library name="sif_web_application" location="$ISE_LIBRARY/external/library/sif/web_application/sif_web_application.ecf" readonly="false"/>
 		<library name="wsf_standalone_websocket" location="$ISE_LIBRARY/contrib/library/web/framework/ewf/wsf/connector/standalone_websocket.ecf"/>
 		<library name="wsf" location="$ISE_LIBRARY\contrib\library\web\framework\ewf\wsf\wsf.ecf"/>
-		<cluster name="sif_web_application_websocket" location="." recursive="true" readonly="true"/>
+		<cluster name="sif_web_application_websocket" location="./src" recursive="true"/>
 	</target>
 </system>
